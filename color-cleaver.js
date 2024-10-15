@@ -7,6 +7,19 @@ const getInput = require("./get-input.js");
 // Your code here!
 
 const color1 = getInput(1)
+const color2 = getInput(2)
+if(color2 === undefined && isValidSecondary(color1)){
+    console.log(colorDeconstructor(color1))
+    //they want to deconstruct
+    //check for secondary color validity
+    //log out response
+}else if(isValidPrimary(color1) && isValidPrimary(color2)){
+        console.log(colorCombinator(color1, color2))
+}
+        
+    //they want to combine
+    //check valid two separate primary colors
+    //log out response
 
 
 
